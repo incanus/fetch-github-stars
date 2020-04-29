@@ -1,6 +1,6 @@
 # fetch-github-stars
 
-This is a little Python script to use the [authenticated GitHub v4 REST API](https://developer.github.com/v3/) to download a user's starred repositories and put the public ones into a compact JSON format on disk, suitable for inclusion in a [Hugo](https://gohugo.io) or similar blog engine (on which you can also create an RSS feed). For now, I run this script periodically when publishing other things on my site. 
+This is a little Python script to use the [GitHub v3 REST API](https://developer.github.com/v3/) to download a user's starred repositories and put the public ones into a compact JSON format on disk, suitable for inclusion in a [Hugo](https://gohugo.io) or similar blog engine (on which you can also create an RSS feed). For now, I run this script periodically when publishing other things on my site. 
 
 It will load up previously-seen results each time and quit early if it gets a bank of results that have been partially- or entirely-seen already, since it fetches the newest stuff first. 
 
